@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estrategias de Recuperación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .door {
+            width: 150px;
+            height: 260px; /* Altura de las puertas ajustada a 260px */
+            border: 2px solid black;
+            margin: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Para asegurarnos de que las imágenes no sobresalgan */
+        }
+
+        .door img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Para ajustar las imágenes al tamaño del marco */
+        }
+
+        .details {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: none;
+            text-align: left; /* Alineación del texto a la izquierda */
+        }
+
+        #chooseAnotherBtn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<img src="https://i.ibb.co/dgvPBsx/portada-DS.png" alt="portada-DS" alt="Portada" style="width: 100%; max-width: 1000px; object-fit: cover;">   
+
+ <h1><b>Seleccione una puerta</b></h1> <!-- Título en letras negritas -->
+    <div class="container">
+        <div class="door" onclick="showDetails(1)">
+            <img src="https://openclipart.org/image/400px/75991" alt="Puerta 1">
+        </div>
+        <div class="door" onclick="showDetails(2)">
+            <img src="https://openclipart.org/image/400px/75979" alt="Puerta 2">
+        </div>
+        <div class="door" onclick="showDetails(3)">
+            <img src="https://openclipart.org/image/400px/20106" alt="Puerta 3">
+        </div>
+        
+    </div>
+    <div class="details" id="details1">
+        <h2>Exámenes de segunda vuelta</h2>
+        <p>Recuerde que cuenta con 2 horas para resolver cada examen.</p>
+        <p>Examen 1. <a href="https://aula01.utel.edu.mx/mod/quiz/view.php?id=24152">https://aula01.utel.edu.mx/mod/quiz/view.php?id=24152</a></p>
+        <p>Examen 2. <a href="https://aula01.utel.edu.mx/mod/quiz/view.php?id=24153">https://aula01.utel.edu.mx/mod/quiz/view.php?id=24153</a></p>
+        <p>Examen 3. <a href="https://aula01.utel.edu.mx/mod/quiz/view.php?id=24154">https://aula01.utel.edu.mx/mod/quiz/view.php?id=24154</a></p>
+        <p>Examen 4. <a href="https://aula01.utel.edu.mx/mod/quiz/view.php?id=24155">https://aula01.utel.edu.mx/mod/quiz/view.php?id=24155</a></p>
+        <p>Examen 5. <a href="https://aula01.utel.edu.mx/mod/quiz/view.php?id=24156">https://aula01.utel.edu.mx/mod/quiz/view.php?id=24156</a></p>
+        <p>Examen 6. <a href="https://aula01.utel.edu.mx/mod/quiz/view.php?id=24156">https://aula01.utel.edu.mx/mod/quiz/view.php?id=24157</a></p>
+        <p><strong>Importante:</strong> Considere que puede resolver los autocalificables para alcanzar una calificación aprobatoria.</p>
+        <button id="chooseAnotherBtn" onclick="chooseAnother()">Elegir otra puerta</button>
+    </div>
+    <div class="details" id="details2">
+        <h2>Análisis de casos</h2>
+        <p>En la semana 6, en el listado de <em>open classes</em>, <a href="https://aula01.utel.edu.mx/mod/zoom/index.php?id=301">https://aula01.utel.edu.mx/mod/zoom/index.php?id=301</a>, podrá consultar los horarios donde se estarán discutiendo los casos (estos se encuentran en el foro de Consultas y comentarios).</p>
+        <p><strong>Importante:</strong></p>
+        <p>Si participa de forma activa en la open class y entrega el caso resuelto, se calificará sobre 10 puntos, pero si entrega únicamente la resolución del caso, se califica sobre 5 pts. La presentación de los análisis de caso corresponde a la siguiente distribución de la calificación final:</p>
+        <p>Semanas 1 y 2 - Análisis de caso 1 - 45%</p>
+        <p>Semanas 3 y 4 - Análisis de caso 2 - 30%</p>
+        <p>Semanas 5, 6 y 7 - Análisis de caso 3 - 25%</p>
+        <p>Considere que puede resolver los autocalificables para alcanzar una calificación aprobatoria.</p>
+        <button id="chooseAnotherBtn" onclick="chooseAnother()">Elegir otra puerta</button>
+    </div>
+    <div class="details" id="details3">
+        <h2>Examen de recuperaci&oacute;n</h2>
+<p>Consta de 10 ejercicios situacionales, cuya resoluci&oacute;n requiere un pensamiento anal&iacute;tico, en los que se abordan los contenidos de las semanas 1 a 4, tiene un valor total de 4 puntos que se suman a la calificaci&oacute;n ordinaria. Para resolverlo, cuenta con dos intentos y un tiempo de 3 horas.</p>
+<p>Enlace: <a href="https://aula01.utel.edu.mx/mod/quiz/view.php?id=28384">https://aula01.utel.edu.mx/mod/quiz/view.php?id=28384</a></p>
+<p>La contrase&ntilde;a es: <strong>d53Bg6</strong></p>
+<p><strong>Importante:</strong> <strong>&iexcl;Ya est&aacute; disponible!</strong> Considere que puede resolver los autocalificables para alcanzar una calificaci&oacute;n aprobatoria.</p>
+        <button id="chooseAnotherBtn" onclick="chooseAnother()">Elegir otra puerta</button>
+    </div>
+   
+
+    <script>
+        function showDetails(strategyNumber) {
+            // Ocultar todos los detalles
+            var allDetails = document.getElementsByClassName("details");
+            for (var i = 0; i < allDetails.length; i++) {
+                allDetails[i].style.display = "none";
+            }
+            
+            // Mostrar el detalle correspondiente a la estrategia seleccionada
+            var selectedDetail = document.getElementById("details" + strategyNumber);
+            selectedDetail.style.display = "block";
+
+            // Ocultar todas las puertas
+            var allDoors = document.getElementsByClassName("door");
+            for (var j = 0; j < allDoors.length; j++) {
+                allDoors[j].style.display = "none";
+            }
+        }
+
+        function chooseAnother() {
+            // Ocultar todos los detalles
+            var allDetails = document.getElementsByClassName("details");
+            for (var i = 0; i < allDetails.length; i++) {
+                allDetails[i].style.display = "none";
+            }
+            
+            // Mostrar todas las puertas nuevamente
+            var allDoors = document.getElementsByClassName("door");
+            for (var j = 0; j < allDoors.length; j++) {
+                allDoors[j].style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>
